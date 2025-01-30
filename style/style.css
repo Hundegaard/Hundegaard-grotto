@@ -20,7 +20,7 @@ body {
     width: 735px;
     min-height: 100%;
     margin: 72px auto;
-    padding: 8px;
+
 }
 
 #header {
@@ -38,7 +38,7 @@ body {
 
 #links {
     position: absolute;
-    top: -23px;
+    top: -34.2px;
     left: 7px;
     width: 735px;
     line-height: 30px;
@@ -87,14 +87,14 @@ body {
     margin-right: 4px;
     padding: 8px;
     background-color: #000;
-    margin-bottom: 4px;
+
 }
 
 #box3 {
     position: absolute;
     top: 359px;
     left: 553px;
-    width: 174px;
+
     min-height: 100%;
     outline: 3px double #F8FDFB;
     padding: 8px;
@@ -110,7 +110,7 @@ h1 {
     font-family: 'Titillium Web', sans-serif;
     font-style: bold;
     display: block;
-    border-bottom: 1px solid #F8FDFB;
+    border-bottom: 3px double #F8FDFB;
     letter-spacing: 2px;
     margin: -2px 0px 0px -4px;
 
