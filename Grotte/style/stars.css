@@ -1,0 +1,372 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ /* Declare Vars */
+ :root {
+     --bgc: black;
+     --textc: #F8FDFB;
+     --empc: #F8FDFB;
+     --brdc: var(--empc);
+     --linkc: #DB5190;
+     --linkv: #DB5190;
+     --hic: hsl(0deg 0% 100% / 26%);
+ }
+
+
+
+ body {
+     font-family: "light";
+     background: url(../assets/skska.png);
+     color: #F8FDFB;
+     /* for firefox */
+     scrollbar-width: thin;
+     scrollbar-color: var(--empc) black;
+     background-size: 248px;
+     background-attachment: fixed;
+     overflow-x: hidden;
+     background-image: url(../media/stars.png);
+ }
+
+
+ ::-webkit-scrollbar {
+     width: 4px;
+     height: px;
+     background-color: #000000;
+ }
+
+ ::-webkit-scrollbar-thumb {
+     color: var(--empc);
+     background-color: var(--empc);
+ }
+
+
+
+
+ a {
+     color: var(--linkc);
+     cursor: url(../cursors/link.png) 0 0, auto;
+     cursor: pointer;
+     text-decoration: underline;
+ }
+
+
+
+ a:visited {
+     color: var(--linkv);
+ }
+
+ hr {
+     border-color: var(--empc);
+     border-style: solid;
+
+ }
+
+ header {
+     text-align: center;
+     padding: 3ch;
+ }
+
+ header img {
+     width: 500px;
+     max-width: 90vw;
+     image-rendering: initial;
+
+ }
+
+ nav {
+     font-family: alt;
+     text-align: center;
+     font-size: 1.4rem;
+ }
+
+ nav a {
+     margin: 0 2ch;
+     color: var(--linkc) !important;
+ }
+
+ img {
+     image-rendering: pixelated;
+     image-rendering: -moz-crisp-edges;
+     image-rendering: crisp-edges;
+     user-select: none;
+ }
+
+ .date {
+     border: double 4.5pt var(--empc);
+     background: black;
+     z-index: 5;
+     position: relative;
+     padding: 0.5ch 2ch;
+     /* USING POSITIONING LIKE THIS IS STUPID!!!
+     * TOO BAD!!! */
+     top: -4.0pt;
+     left: -4pt;
+     width: fit-content;
+     width: -moz-fit-content;
+     word-break: break-word;
+     font-weight: normal;
+ }
+
+ .text {
+     width: 95%;
+     max-width: 155ch;
+     margin: 10ch auto;
+     /* border: double 5.5pt var(--empc); */
+     /* Some would say just having a border around the 
+     * inner content would be better. To that I say
+     * yes. yes it would. */
+     outline: var(--empc) double 4.5pt;
+     outline-offset: -3.5ch;
+     background: black;
+     text-align: justify;
+     hyphens: auto;
+ }
+
+ .text div {
+     padding: 5ch;
+     padding-top: 1.5ch;
+     font-size: 1.275rem;
+ }
+
+ /* Redund Use B For Bolded Text */
+ .text strong {
+     display: block;
+     margin-top: 2ch;
+ }
+
+ .text strong::before {
+     content: ">";
+     margin-right: 1ch;
+     display: inline-block;
+ }
+
+ .text ul {
+     margin-left: 4ch;
+     list-style: square;
+ }
+
+ .text ol {
+     margin-left: 4ch;
+ }
+
+ /* Only targets hrs directly in the text portion, so hr's in
+ * blockquotes etc can be ignored.  */
+ .text>div>hr {
+     margin: 2ch 0;
+ }
+
+ /* Naturally space out specified paragraph blocks instead of using brbr */
+ .text p {
+     text-align: inherit;
+     margin-top: 2ch;
+ }
+
+ .text p:first-of-type {
+     margin-top: 0;
+ }
+
+
+ /* Please put <code> inside <blockquote> tag for proper formatting */
+ .text blockquote {
+     background-color: #090909;
+     padding: 2ch;
+     border: double 3pt var(--empc);
+     overflow: auto;
+     margin: 2ch 0;
+     position: relative;
+     max-height: 60vh;
+ }
+
+ .text blockquote.nt::after {
+     content: none;
+ }
+
+ /* Title of blockquote (such as code filename) */
+ blockquote::after {
+     content: attr(data-title);
+     position: absolute;
+     left: 0;
+     top: 0;
+     background: black;
+     font-size: 0.99rem;
+     border-bottom: double;
+     /* font-style: italic; */
+     border-right: double;
+     padding: 0.5ch;
+     /* filter: brightness(0.8); */
+ }
+
+ blockquote code {
+     /* 	font-family: monospace; */
+     font-family: 'light';
+     white-space: pre;
+     overflow: auto;
+     font-size: 0.7em;
+ }
+
+ footer {
+     text-align: center;
+     color: #DB5190;
+     font-size: 0.9em;
+     letter-spacing: 0.7ch;
+     padding: 2ch;
+ }
+
+ /* Image Related Shit */
+ .text img {
+     /* max-width: 90%; */
+     margin: 2ch;
+ }
+
+ .text figure {
+     margin: 2ch;
+ }
+
+ .flr {
+     float: right;
+ }
+
+ .fll {
+     float: left;
+ }
+
+ /* Preset classes for quick sizes, if you need something custom
+ * do inline who fucking cares this is a blog */
+ .smallimg {
+     /* width: 30ch; */
+     width: 100%;
+     max-width: 30ch;
+ }
+
+ .medimg {
+     /* width: 60ch; */
+     width: 100%;
+     max-width: 60ch;
+ }
+
+ /* For images that should span an entire block */
+ .largimg {
+     max-width: 100% !important;
+     width: 100%;
+     margin: 0 auto !important;
+     float: none;
+
+ }
+
+ .autoimg {
+     /* Use actual size of the image */
+     max-width: min-content;
+     width: 100%;
+     max-width: -moz-min-content;
+ }
+
+ /* For images that need a caption */
+
+ figure img {
+     max-width: unset !important;
+     width: -webkit-fill-available !important;
+     width: -moz-available;
+     height: auto;
+     margin: 0 !important;
+ }
+
+ figcaption {
+     font-size: 0.9em;
+     font-style: italic;
+     text-align: center;
+     padding: 0.2ch;
+     filter: brightness(0.8);
+     margin-bottom: 0.3ch;
+ }
+
+ /* Special formatting classes */
+
+ .centerme {
+     text-align: center !important;
+ }
+
+ img.centerme {
+     display: block;
+     margin: 0 auto;
+ }
+
+ video.centerme {
+     display: block;
+     margin: 0 auto;
+ }
+
+ figure.centerme {
+     display: block;
+     margin: 0 auto;
+ }
+
+ .text video {
+     max-width: 95%;
+ }
+
+ .indent {
+     padding-left: 4ch;
+ }
+
+ h1.title {
+     border-top: solid white 2px;
+     text-align: center;
+     border-bottom: solid white 2px;
+     font-size: 48px;
+     /* trust me */
+     display: flex;
+     justify-content: center;
+     margin-bottom: 0.6ch;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
+     font-weight: normal;
+ }
+
+ h1+p,
+ h2+p,
+ h3+p,
+ h4+p,
+ h5+p {
+     margin-top: 0 !important;
+ }
+
+ p+h1,
+ p+h2,
+ p+h3,
+ p+h4,
+ p+h5 {
+     margin-top: 1ch;
+ }
+
+ hr.isp {
+     /* invisible spacer */
+     border: none;
+     margin: 2.5ch;
+ }
+
+
+ /* not enough room for medimg and text next to eachother, expand image to full size */
+ @media screen and (max-width: 110ch) {
+     .medimg {
+         max-width: 100% !important;
+         width: 100%;
+         margin: 0 auto !important;
+         float: none;
+     }
+ }
+
+ @media screen and (max-width: 75ch) {
+     .smallimg {
+         max-width: 100% !important;
+         width: 100%;
+         margin: 0 auto !important;
+         float: none;
+     }
+ }
