@@ -28,7 +28,7 @@ body {
     width: 735px;
     background-image: url('');
     background-repeat: no-repeat;
-    border: 1px solid #F8FDFB;
+    outline: 3px double #F8FDFB;
     background-size: cover;
     background-color: #000;
     font-size: xx-large;
@@ -52,8 +52,6 @@ body {
     margin-right: -3px;
     background-color: #0C0338;
     color: #F8FDFB;
-    -moz-border-radius: 10px 10px 0px 0px;
-    -webkit-border-radius: 10px 10px 0px 0px;
     border-radius: 10px 10px 0px 0px;
     text-transform: uppercase;
     letter-spacing: 2px;
