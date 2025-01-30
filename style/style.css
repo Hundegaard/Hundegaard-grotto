@@ -46,7 +46,7 @@ body {
 }
 
 #links a {
-    position: relative; /* Ensure the link is positioned relative to its container */
+    position: relative; 
     width: 120px;
     display: inline-block;
     margin-right: -3px;
@@ -56,7 +56,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     border: 1px solid #F8FDFB;
-    text-align: center; /* Center the text */
+    text-align: center; 
 }
 
 #links a:hover {
@@ -66,15 +66,15 @@ body {
 }
 
 #links a:hover::after {
-    content: attr(data-hover); /* Use the data-hover attribute for the content */
-    color: #F8FDFB; /* Ensure the text color is set */
-    position: absolute; /* Position it absolutely */
-    top: 50%; /* Center it vertically */
-    left: 50%; /* Center it horizontally */
-    transform: translate(-50%, -50%); /* Adjust the position to be centered */
-    width: 100%; /* Ensure it covers the full width */
-    text-align: center; /* Center the text */
-    pointer-events: none; /* Ensure it doesn't interfere with hover */
+    content: attr(data-hover); 
+    color: #F8FDFB; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 100%; 
+    text-align: center; 
+    pointer-events: none; 
 }
 
 
