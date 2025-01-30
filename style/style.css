@@ -47,7 +47,7 @@ body {
 }
 
 #links a {
-    position: relative; 
+    position: relative;
     width: 120px;
     display: inline-block;
     margin-right: -3px;
@@ -57,7 +57,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     border: 1px solid #F8FDFB;
-    text-align: center; 
+    text-align: center;
 }
 
 #links a:hover {
@@ -67,15 +67,15 @@ body {
 }
 
 #links a:hover::after {
-    content: attr(data-hover); 
-    color: #F8FDFB; 
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    width: 100%; 
-    text-align: center; 
-    pointer-events: none; 
+    content: attr(data-hover);
+    color: #F8FDFB;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
 }
 
 
@@ -95,7 +95,6 @@ body {
     position: absolute;
     top: 359px;
     left: 553px;
-
     min-height: 85%;
     outline: 3px double #F8FDFB;
     padding: 8px;
@@ -103,6 +102,7 @@ body {
     margin-bottom: 4px;
     text-align: left;
 }
+
 
 h1 {
     text-align: center;
