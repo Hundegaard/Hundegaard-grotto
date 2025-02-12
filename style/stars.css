@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'MimiqPrime-Regular';
+    src: url(MimiqPrime-Regular.ttf);
+}
+ 
  * {
      margin: 0;
      padding: 0;
@@ -91,6 +96,31 @@
      image-rendering: crisp-edges;
      user-select: none;
  }
+
+ .Mimiq-h1 {
+    font-family: 'MimiqPrime-Regular';
+    font-size: 40px;
+    
+ }
+
+ .Mimiq-h2 {
+    font-family: 'MimiqPrime-Regular';
+    font-size: 35px;
+    
+ }
+
+ .Mimiq-h3 {
+    font-family: 'MimiqPrime-Regular';
+    font-size: 30px;
+    
+ }
+
+ .Mimiq-p {
+    font-family: 'MimiqPrime-Regular';
+    font-size: 27px;
+    
+ }
+
 
  .date {
      border: double 4.5pt var(--empc);
