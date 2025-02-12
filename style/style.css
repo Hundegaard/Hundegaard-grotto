@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'MimiqPrime-Regular';
+    src: url(MimiqPrime-Regular.ttf);
+}
 html,
 body {
     margin: 0px;
@@ -11,7 +15,7 @@ body {
     font-size: 20px;
     color: #F8FDFB;
     text-align: justify;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 
@@ -79,6 +83,14 @@ body {
     pointer-events: none;
 }
 
+.Mimiq-text {
+    font-family: 'MimiqPrime-Regular';
+    font-size: 24px;
+    color: #F8FDFB;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 #box2 {
     position: absolute;
@@ -89,6 +101,7 @@ body {
     margin-right: 4px;
     padding: 8px;
     background-color: #000;
+
 
 }
 
