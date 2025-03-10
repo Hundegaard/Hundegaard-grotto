@@ -152,3 +152,60 @@ a {
     outline-offset: -3.5ch;
     background: black;
 }
+
+
+
+/* Add Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    #box1 {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    #header {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+    }
+
+    #links {
+        width: 100%;
+        left: 0;
+    }
+
+    #links a {
+        width: 80px;
+        font-size: 16px;
+    }
+
+    #box2, #box3 {
+        position: relative;
+        width: 95%;
+        left: 0;
+        top: 20px;
+        margin: 10px auto;
+    }
+
+    .Mimiq-p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    #links a {
+        width: 60px;
+        font-size: 14px;
+    }
+
+    #header {
+        font-size: x-large;
+    }
+
+    .Mimiq-p {
+        font-size: 16px;
+    }
+}

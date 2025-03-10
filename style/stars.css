@@ -398,3 +398,72 @@
          float: none;
      }
  }
+
+
+
+/* Add viewport-based media queries */
+@media screen and (max-width: 768px) {
+    .text {
+        width: 90%;
+        margin: 5ch auto;
+        outline-offset: -2ch;
+    }
+
+    .text div {
+        padding: 3ch;
+        font-size: 1rem;
+    }
+
+    header img {
+        width: 50%;
+    }
+
+    nav {
+        font-size: 1.1rem;
+    }
+
+    nav a {
+        margin: 0 1ch;
+    }
+
+    .Mimiq-h1 {
+        font-size: 32px;
+    }
+
+    .Mimiq-h2 {
+        font-size: 28px;
+    }
+
+    .Mimiq-p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text {
+        width: 95%;
+        margin: 3ch auto;
+        outline-offset: -1.5ch;
+    }
+
+    .text div {
+        padding: 2ch;
+    }
+
+    nav {
+        font-size: 1rem;
+    }
+
+    .Mimiq-h1 {
+        font-size: 28px;
+    }
+
+    .Mimiq-p {
+        font-size: 18px;
+    }
+
+    blockquote {
+        max-height: 50vh;
+        font-size: 0.9rem;
+    }
+}
