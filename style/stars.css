@@ -10,7 +10,6 @@
 
  /* Declare Vars */
  :root {
-     --bgc: black;
      --textc: #F8FDFB;
      --empc: #F8FDFB;
      --brdc: var(--empc);
