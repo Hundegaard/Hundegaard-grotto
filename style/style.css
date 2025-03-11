@@ -18,6 +18,18 @@ body {
     letter-spacing: 2px;
 }
 
+.headerText {
+    text-align: center;
+    color: #DB5190;
+    font-size: 1.15rem;
+    letter-spacing: 0.7ch;   
+    margin-top: 0.6rem;
+}
+
+.headerLink {
+font-style: normal;
+    color: #DB5190;
+}
 
 
 #box1 {

@@ -22,7 +22,7 @@
 
 
  body {
-     font-family: "light";
+    font-family: 'Titillium Web', sans-serif;
      background: url(../assets/skska.png);
      color: #F8FDFB;
      /* for firefox */
@@ -34,6 +34,16 @@
      background-image: url(../media/stars.png);
  }
 
+ 
+
+.headerLink {
+    text-align: center;
+    color: #DB5190;
+    font-size: 1.15rem;
+    letter-spacing: 0.7ch;   
+    margin-top: 0.6rem;
+    text-decoration: none;
+}
 
  ::-webkit-scrollbar {
      width: 4px;
@@ -70,7 +80,7 @@
 
  header {
      text-align: center;
-     padding: 3ch;
+
  }
 
  header img {
@@ -238,7 +248,7 @@
  footer {
      text-align: center;
      color: #DB5190;
-     font-size: 0.9em;
+     font-size: 1.em;
      letter-spacing: 0.7ch;    
  }
 
